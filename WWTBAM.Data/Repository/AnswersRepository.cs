@@ -4,6 +4,8 @@ using WWTBAM.Data.Entities;
 
 namespace WWTBAM.Data.Repository;
 
+//all repositories made according to Repository-Service pattern
+
 public class AnswersRepository : IAnswersRepository
 {
     private readonly WWTBAMDbContext context;

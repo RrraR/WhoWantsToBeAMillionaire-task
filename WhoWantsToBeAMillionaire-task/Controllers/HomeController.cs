@@ -1,11 +1,10 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WhoWantsToBeAMillionaire_task.Models;
-using WhoWantsToBeAMillionaire_task.Service;
-using WWTBAM.Data;
-using WWTBAM.Data.Repository;
 
 namespace WhoWantsToBeAMillionaire_task.Controllers;
+
+//Controller used to navigate main entery page
 
 public class HomeController : Controller
 {
@@ -19,11 +18,6 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
-    }
-    
-    public IActionResult Result(WWTBAMGameViewModel model)
-    {
-        return View(model);
     }
 
     public IActionResult Privacy()

@@ -1,6 +1,8 @@
 ﻿using WWTBAM.Data;
 using WWTBAM.Data.Entities;
 
+//Game model used in controllers, services and views to access data
+
 namespace WhoWantsToBeAMillionaire_task.Models;
 
 public class WWTBAMGameViewModel

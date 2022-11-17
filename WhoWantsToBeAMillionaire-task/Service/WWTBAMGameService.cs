@@ -2,6 +2,8 @@
 using WWTBAM.Data.Entities;
 using WWTBAM.Data.Repository;
 
+//Main service of the application that defines game model
+
 namespace WhoWantsToBeAMillionaire_task.Service;
 
 public class WWTBAMGameService : IWWTBAMGameService

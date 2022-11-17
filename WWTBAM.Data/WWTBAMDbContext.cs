@@ -5,15 +5,13 @@ namespace WWTBAM.Data;
 
 public class WWTBAMDbContext : DbContext
 {
+    //EF core configurations. This project uses 3 tables: Questions, Answers and QuestionLevel.
+    //Tables Answers and Questions are linked with QuestionId foreign key from table answers to table questions
+    //tables Questions and QuestionLevels are linked with foreign key from table questions to table questionlevels
+    //configuartions made using fluent API
     public DbSet<QuestionEntity> Questions { get; set; }
     public DbSet<AnswersEntity> Answers { get; set; }
     public DbSet<QuestionLevelEntity> QuestionLevel { get; set; }
-
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    // {
-    //     optionsBuilder.UseSqlServer(
-    //         @"Server=localhost\SQLEXPRESS;Database=WWTBAM-task;Trusted_Connection=True;TrustServerCertificate=True");
-    // }
 
     public WWTBAMDbContext(DbContextOptions options) : base(options)
     {

@@ -2,6 +2,7 @@
 using WhoWantsToBeAMillionaire_task.Models;
 using WhoWantsToBeAMillionaire_task.Service;
 
+//controller used to navigate Game page and access GameOver, Result, YouWon and SafeHeaven pages
 
 namespace WhoWantsToBeAMillionaire_task.Controllers;
 

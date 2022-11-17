@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WWTBAM.Data.Entities;
 
+//Question entity contains same fields as in database except the last one which is navigatin property and answers collection
+
 public class QuestionEntity
 {
     [Key] public int QuestionId { get; set; }
