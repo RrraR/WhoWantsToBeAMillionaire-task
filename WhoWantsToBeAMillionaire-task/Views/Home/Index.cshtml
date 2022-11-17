@@ -1,0 +1,15 @@
+﻿@model WhoWantsToBeAMillionaire_task.Models.WWTBAMGameViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="row">
+
+        <h2>
+            <div>Welcome to the game Who Wants To Be A Millionaire!</div>
+            <br/>
+            <input type="button" class="btn btn-success" value="Let's begin" onclick="window.location.href = ('@Url.Action("Index", "Game")')">
+        </h2>
+    </div>
+</div>

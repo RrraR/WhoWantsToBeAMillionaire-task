@@ -1,0 +1,41 @@
+﻿@model WWTBAMGameViewModel
+@{
+    ViewData["Title"] = "Game Page";
+}
+
+@{var modelData = Model;}    
+
+<div class="text-center">
+    <div class="row">
+        @using (Html.BeginForm("Play", "Game", modelData, FormMethod.Post))
+        {
+            <h1>
+                <label name="Level">You are now playing for @Model.QuestionLevel.ValueOfLevel$</label>
+            </h1>
+            <h2>
+                <label name="Question">@Model.Question.QuestionText</label>
+            </h2>
+            <br/>
+            <div class="row-cols-lg-4">
+                <input type="hidden" value="@Model.Answer_A" name="AnswerA"/>
+                <button type="submit" class="btn btn-info" name="answerId" value=@Model.Answer_A.AnswerId>A: @Model.Answer_A.AnswerText</button>
+            </div>
+            <br/>
+            <div class="row-cols-lg-4">
+                <input type="hidden" value="@Model.Answer_B" name="AnswerB"/>
+                <button type="submit" class="btn btn-info" name="answerId" value=@Model.Answer_B.AnswerId>B: @Model.Answer_B.AnswerText</button>
+            </div>
+            <br/>
+            <div class="row-cols-lg-4">
+                <input type="hidden" value="@Model.Answer_C" name="AnswerC"/>
+                <button type="submit" class="btn btn-info" name="answerId" value=@Model.Answer_C.AnswerId>C: @Model.Answer_C.AnswerText</button>
+            </div>
+            <br/>
+            <div class="row-cols-lg-4">
+                <input type="hidden" value="@Model.Answer_D" name="AnswerD"/>
+                <button type="submit" class="btn btn-info" name="answerId" value=@Model.Answer_D.AnswerId>D: @Model.Answer_D.AnswerText</button>
+            </div>
+            <br/>
+        }
+    </div>
+</div>

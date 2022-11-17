@@ -1,0 +1,25 @@
+﻿@model WWTBAMGameViewModel
+@{
+    ViewData["Title"] = "Safe Heaven";
+}
+
+@{ var modelData = Model; }
+
+<div class="text-center">
+    <div class="row">
+        @using (Html.BeginForm("SafeHeaven", "Game", modelData, FormMethod.Post))
+        {
+            <h3>
+                <div>
+                    <label>You have reached safe heaven on level @Model.QuestionLevel.LevelId</label>
+                </div>
+                <div>
+                    <label name="Level">Your current prize @Model.QuestionLevel.ValueOfLevel$</label>
+                </div>
+                <input type="hidden" value="@Model.CurrentQuestionLevel" name="CurrentLevel"/>
+                <button type="button" class="btn btn-warning" id="Prize" onclick="window.location.href = ('@Url.Action("Leave", "Game", modelData)')">Take money!</button>
+                <button type="submit" class="btn btn-info" id="Leave" onclick="window.location.href = ('@Url.Action("SafeHeaven", "Game", modelData)')">Continue playing!</button>
+            </h3>
+        }
+    </div>
+</div>
