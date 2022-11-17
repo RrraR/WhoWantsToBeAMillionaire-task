@@ -8,7 +8,7 @@
 
  "ConnectionStrings": {"Default": "Server=localhost\\SQLEXPRESS;Database=WWTBAM-task;Trusted_Connection=True;TrustServerCertificate=True"}
   
-2. Use FillDatabase.sql file to populate tables
+2. Use FillDatabase.sql file to create and populate tables
 
 ## How to play
 
