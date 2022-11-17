@@ -50,6 +50,23 @@ CREATE TABLE [dbo].[Answers]
             ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
+insert into dbo.QuestionLevel(LevelId, ValueOfLevel)
+values (1, 100),
+       (2, 200),
+       (3, 300),
+       (4, 500),
+       (5, 1000),
+       (6, 2000),
+       (7, 4000),
+       (8, 8000),
+       (9, 16000),
+       (10, 32000),
+       (11, 64000),
+       (12, 125000),
+       (13, 250000),
+       (14, 500000),
+       (15, 1000000)
+
 insert into dbo.Questions(QuestionId, QuestionText, QuestionOfLevelId)
 values (1, 'What is another name for the camelopard?', 1),
        (2, 'A Third-year college student is usually called a what?', 2),
@@ -129,22 +146,6 @@ values (1, 'circus', 0, 1),
        (59, '1712', 0, 15),
        (60, '1788', 1, 15)
 
-insert into dbo.QuestionLevel(LevelId, ValueOfLevel)
-values (1, 100),
-       (2, 200),
-       (3, 300),
-       (4, 500),
-       (5, 1000),
-       (6, 2000),
-       (7, 4000),
-       (8, 8000),
-       (9, 16000),
-       (10, 32000),
-       (11, 64000),
-       (12, 125000),
-       (13, 250000),
-       (14, 500000),
-       (15, 1000000)
     
 
     

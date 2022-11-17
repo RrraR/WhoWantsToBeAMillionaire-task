@@ -10,7 +10,7 @@
         @using (Html.BeginForm("Play", "Game", modelData, FormMethod.Post))
         {
             <h1>
-                <label name="Level">You are now playing for @Model.QuestionLevel.ValueOfLevel$</label>
+                <label name="Level">You are playing for @Model.QuestionLevel.ValueOfLevel$</label>
             </h1>
             <h2>
                 <label name="Question">@Model.Question.QuestionText</label>
