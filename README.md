@@ -2,7 +2,7 @@
 
 ## How to configure
 > Note! It's preferable if you initiate database separately before doing anything else using your preffered database studio
->(this project uses MSSQL and MSSQl managment studio 18) or you can initiate database by runnging update-database command after changing connection string
+>(this project uses MSSQL and MSSQL managment studio 18) or you can initiate database by runnging update-database command after changing connection string
 
 1. Change database settings in appsettings.json 
 
