@@ -24,7 +24,7 @@ public class GameController : Controller
             return currentGameModel.CurrentQuestionLevel switch
             {
                 5 or 10 => View("SafeHeaven", _gameService.GetGameViewModel(currentGameModel.CurrentQuestionLevel)),
-                15 => View("Result", _gameService.GetGameViewModel(currentGameModel.CurrentQuestionLevel)),
+                15 => View("YouWon", _gameService.GetGameViewModel(currentGameModel.CurrentQuestionLevel)),
                 _ => View("Game", _gameService.UpdateGameViewModel(currentGameModel))
             };
         }
